@@ -7,58 +7,46 @@
 body {
   height: 100vh;
   background: linear-gradient(#000000 50%, #07e387 50%);
+  text-align: center;
 }
-.scoreboard1 {
+body h1{
+  color: #07e387;
+}
+.menu{
+  background-color: #07e387;
+  width: min(90%, 34em);
+  padding: 2em;
+  border-radius: 1.5em;
+  position: absolute;
+  transform: translate(-50%, -35%);
+  left: 50%;
+}
+.menu a{
+  color: #1e1e21;
+  padding: 1em;
+  text-decoration: none;
+}
+.menu a:hover{
+  color: #ffffff;
+}
+.peserta {
   background-color: #1e1e21;
   width: min(90%, 34em);
   position: absolute;
   transform: translate(-50%, -50%);
-  left: 25%;
-  top: 25%;
+  left: 50%;
+  top: 50%;
   padding: 2em;
   border-radius: 0.5em;
-  display: grid;
-  grid-template-columns: 2fr 1fr 2fr;
   align-items: center;
 }
-.scoreboard2 {
-  background-color: #1e1e21;
-  width: min(90%, 34em);
-  position: absolute;
-  transform: translate(-50%, -50%);
-  left: 25%;
-  top: 75%;
-  padding: 2em;
+.versus{
+  text-align: center;
+  background-color: #353638;
+  padding: 0,5em;
   border-radius: 0.5em;
   display: grid;
   grid-template-columns: 2fr 1fr 2fr;
-  align-items: center;
-}
-.scoreboard3 {
-  background-color: #1e1e21;
-  width: min(90%, 34em);
-  position: absolute;
-  transform: translate(-50%, -50%);
-  left: 75%;
-  top: 25%;
-  padding: 2em;
-  border-radius: 0.5em;
-  display: grid;
-  grid-template-columns: 2fr 1fr 2fr;
-  align-items: center;
-}
-.scoreboard4 {
-  background-color: #1e1e21;
-  width: min(90%, 34em);
-  position: absolute;
-  transform: translate(-50%, -50%);
-  left: 75%;
-  top: 75%;
-  padding: 2em;
-  border-radius: 0.5em;
-  display: grid;
-  grid-template-columns: 2fr 1fr 2fr;
-  align-items: center;
 }
 .team {
   text-align: center;
@@ -66,50 +54,40 @@ body {
   padding: 2em;
   border-radius: 0.5em;
 }
-.arena {
+.nopeserta {
   text-align: center;
   grid-column: 1/4;
 }
 button {
   cursor: pointer;
 }
-#reset-btn {
-  background-color: transparent;
-  border: 3px solid #07e387;
-  color: #07e387;
-  height: 5em;
-  width: 5em;
-  margin: auto;
-  border-radius: 0.5em;
+.versus p {
+  color: #ffffff;
 }
-.arena h2 {
+.peserta h2 {
   color: #07e387;
 }
 .team h2 {
   color: #07e387;
-}
-.team p {
-  color: #ffffff;
-  font-size: 3.75em;
 }
 .btn-container {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-.team button {
-  background-color: #07e387;
-  border: none;
+.peserta input{
+  width: min(90%, 34em);;
   outline: none;
-  padding: 0.3em 0.7em;
-  border-radius: 0.3em;
-  font-weight: 600;
-  font-size: 1.3em;
+  font-size: 2.5em;
+  background: transparent;
+  border: transparent;
+  text-align: center;
+  color: #07e387;
 }
-input{
-  width: 5em;
+.versus input{
+  width: min(90%, 34em);;
   outline: none;
-  font-size: 1.5em;
+  font-size: 1em;
   background: transparent;
   border: transparent;
   text-align: center;
